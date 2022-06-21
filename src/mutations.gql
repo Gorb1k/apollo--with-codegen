@@ -1,0 +1,15 @@
+mutation login ($loginUserInput: LoginUserInput!){
+  login(loginUserInput:$loginUserInput){
+    access_token
+    user {
+      username
+    }
+  }
+}
+
+mutation register ($loginUserInput: LoginUserInput!){
+    register(loginUserInput:$loginUserInput) {
+        id
+        username
+  }
+}

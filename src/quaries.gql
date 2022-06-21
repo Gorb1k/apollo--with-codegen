@@ -1,0 +1,14 @@
+query cats{
+  cats {
+    name
+    owner {
+      name
+    }
+  }
+}
+
+query users($username: String) {
+  users(username:$username) {
+    username
+  }
+}
